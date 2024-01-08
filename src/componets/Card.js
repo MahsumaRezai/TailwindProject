@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-const Card = () => {
+const Card = (props) => {
     return (
-       
-      <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300n">
-      Save changes
-    </button>
+   <Fragment>
+     <div className="bg-blue-100 w-6/12 h-fit m-auto mt-40 ">
+     {props.children}
+
+     </div>
+
+   </Fragment>
     
     )
 };
